@@ -17,7 +17,7 @@ int main(int argc,char *argv[]){
 	}else if (rank == 1) {
 	  dest = 0;
 	  source = 0;
-    MPI_Sendrecv(&outmsg, 1, MPI_CHAR, dest, tag, MPI_COMM_WORLD, &inmsg, 1, MPI_CHAR, source, tag, MPI_COMM_WORLD, &Stat);
+    MPI_Sendrecv(&inmsg, 1, MPI_CHAR, source, tag, MPI_COMM_WORLD, &Stat, &outmsg, 1, MPI_CHAR, dest, tag, MPI_COMM_WORLD);
 	 }
 
 	MPI_Get_count(&Stat, MPI_CHAR, &count);
