@@ -1,3 +1,9 @@
+/*
+* Con la función MPI_Sendrecv no se generan deadlocks
+* Con el orden MPI_Send y MPI_Recv se generan aleatoriamente deadlocks,
+* pero no siempre como en el ejercicio 41.c
+*/
+
 #include <stdio.h>
 #include "mpi.h"
 

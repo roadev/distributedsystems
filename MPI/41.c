@@ -1,3 +1,8 @@
+/*
+* Este programa genera un deadlock
+*/
+
+
 #include <stdio.h>
 #include "mpi.h"
 
